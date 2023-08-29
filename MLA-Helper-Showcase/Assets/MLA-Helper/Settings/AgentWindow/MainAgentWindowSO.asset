@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5036cf561551e2c4dbfdb41ef8355ea1, type: 3}
+  m_Name: MainAgentWindowSO
+  m_EditorClassIdentifier: 
+  agent: {fileID: 0}
+  agentModel: {fileID: 5022602860645237092, guid: 98e6b3b30c44aa14ca1ba31e8ce43f47, type: 3}
+  observationCollection: {fileID: 11400000, guid: edf2ae77e29d923439476d68980e8e18, type: 2}
+  actionMaskCollection: {fileID: 11400000, guid: 0dd75849916fa1948aa8e9388f2f9c03, type: 2}

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dffd95b9e79cc645b85e6fcaa46aed9, type: 3}
+  m_Name: ViewerCompute_Final Observation Collection
+  m_EditorClassIdentifier: 
+  Name: ViewerCompute_Final Observation Collection
+  ObservationReferences:
+  - rid: 5482795578069614596
+  - rid: 5482795578069614597
+  references:
+    version: 2
+    RefIds:
+    - rid: 5482795578069614596
+      type: {class: FloatGOReference, ns: MLAHelper.ScriptableReferenceSystem.Reference, asm: Assembly-CSharp}
+      data:
+        name: Input_1
+        variable: {fileID: 11400000, guid: 1e21ff7fe44c26b48a94b180cd696f96, type: 2}
+    - rid: 5482795578069614597
+      type: {class: FloatGOReference, ns: MLAHelper.ScriptableReferenceSystem.Reference, asm: Assembly-CSharp}
+      data:
+        name: Input_2
+        variable: {fileID: 11400000, guid: ddbd15952f651e04aa989d562114e4d0, type: 2}

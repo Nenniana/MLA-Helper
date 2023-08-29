@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0339027d53d44241ba9886f1548544f, type: 3}
+  m_Name: MLHelperSettingsSO_1
+  m_EditorClassIdentifier: 
+  createActionMaskCollectionsWithUseConstantDefault: 1
+  createObservationCollectionsWithUseConstantDefault: 1
+  visualizeOn: 20
+  actionTypeFocus: 10
+  observationColor:
+    serializedVersion: 2
+    rgba: 4292926204
+  observationTextColor:
+    serializedVersion: 2
+    rgba: 4280163870
+  activeColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  activeTextColor:
+    serializedVersion: 2
+    rgba: 4280163870
+  actionColor:
+    serializedVersion: 2
+    rgba: 4290379560
+  actionTextColor:
+    serializedVersion: 2
+    rgba: 4280163870
+  actionMaskBlockedColor:
+    serializedVersion: 2
+    rgba: 4284172965
+  actionMaskBlockedTextColor:
+    serializedVersion: 2
+    rgba: 4280163870
+  actionMaskChosenColor:
+    serializedVersion: 2
+    rgba: 4287627163
+  actionMaskChosenTextColor:
+    serializedVersion: 2
+    rgba: 4280163870
+  actionMaskUnblockedColor:
+    serializedVersion: 2
+    rgba: 4278447103
+  actionMaskUnblockedTextColor:
+    serializedVersion: 2
+    rgba: 4280163870
+  visualizationBackgroundColor:
+    serializedVersion: 2
+    rgba: 1973790
+  layerHorizontalSpacing: 300
+  layerVerticalSpacing: 300
+  scrollSensitivity: 1
+  dragSensitivity: {x: 0.035, y: 0.035}
+  zoomPositionSensitivity: {x: 1, y: 1}
+  resizeAreaSize: {x: 0.2, y: 0.2}
+  observationCollectionPath: Assets/MLA-Helper/ScriptableObjects/Collections/Observations/
+  actionMaskCollectionPath: Assets/MLA-Helper/ScriptableObjects/Collections/ActionMasks/
+  floatObservationPath: Assets/MLA-Helper/ScriptableObjects/Floats/
+  intObservationPath: Assets/MLA-Helper/ScriptableObjects/Ints/
+  boolObservationPath: Assets/MLA-Helper/ScriptableObjects/ActionMask/
+  vector2ObservationPath: Assets/MLA-Helper/ScriptableObjects/Vector2s/
+  vector3ObservationPath: Assets/MLA-Helper/ScriptableObjects/Vector3s/
+  quaternionObservationPath: Assets/MLA-Helper/ScriptableObjects/Quaternions/
+  floatListObservationPath: Assets/MLA-Helper/ScriptableObjects/FloatLists/
+  boolActionMaskPath: Assets/MLA-Helper/ScriptableObjects/ActionMask/
+  resizeCursorPath: Assets/MLA-Helper/Images/cursor-pan-resize.png

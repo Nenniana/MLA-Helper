@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e248f6d909b04d4192135b47d95449c, type: 3}
+  m_Name: ViewerCompute_Final Action mask Collection
+  m_EditorClassIdentifier: 
+  Name: ViewerCompute_Final Action mask Collection_1
+  actionMasks:
+  - rid: 5482795646411341824
+  - rid: 5482795646411341825
+  - rid: 5482795646411341826
+  - rid: 5482795646411341827
+  folderPath: 
+  references:
+    version: 2
+    RefIds:
+    - rid: 5482795646411341824
+      type: {class: GLobalActionMaskReference, ns: MLAHelper.ScriptableReferenceSystem.Reference, asm: Assembly-CSharp}
+      data:
+        name: NotBiggerThan10
+        branch: 0
+        index: 0
+        Variable: {fileID: 11400000, guid: 17806391f6476484ba633a4b82bd9352, type: 2}
+    - rid: 5482795646411341825
+      type: {class: GLobalActionMaskReference, ns: MLAHelper.ScriptableReferenceSystem.Reference, asm: Assembly-CSharp}
+      data:
+        name: BiggerThan10
+        branch: 0
+        index: 0
+        Variable: {fileID: 11400000, guid: 805b75ef53671684bba2765522111411, type: 2}
+    - rid: 5482795646411341826
+      type: {class: GLobalActionMaskReference, ns: MLAHelper.ScriptableReferenceSystem.Reference, asm: Assembly-CSharp}
+      data:
+        name: NotSmallerThan10
+        branch: 0
+        index: 0
+        Variable: {fileID: 11400000, guid: 685674e983e5fed458ed10c35f8266a2, type: 2}
+    - rid: 5482795646411341827
+      type: {class: GLobalActionMaskReference, ns: MLAHelper.ScriptableReferenceSystem.Reference, asm: Assembly-CSharp}
+      data:
+        name: SmallerThan10
+        branch: 0
+        index: 0
+        Variable: {fileID: 11400000, guid: c88711be745413b41ba9361040066290, type: 2}
