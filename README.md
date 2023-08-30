@@ -1,6 +1,6 @@
 # MLA-Helper
-MLA-Helper is a master's thesis project intended to enhance and increase transparency for ML-Agents package in Unity.
-
+MLA-Helper is a master's thesis project intended to enhance and increase transparency for ML-Agents package in Unity.\n
+\n
 Dependencies:
 "com.unity.ml-agents": "2.0.1",
 "com.unity.mathematics": "1.2.6",
