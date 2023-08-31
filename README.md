@@ -82,3 +82,8 @@ This custom package includes all elements within MLA-Helper, except dependencies
 1. Add observation references to existing scripts and attach previously created referenced observations hereto in the inspector.
 2. Add action mask references to existing scripts and attach previously created referenced action masks hereto in the inspector.
 3. Set whether to use constant or dynamic information for each reference.
+
+## Debugging Quick List
+- Ensure that both agent and MLA-Helper have access to the same model in the inspector.
+- Ensure that MLA-Helper is deployed within the scene.
+- Ensure that RequestNewStep is being called.
