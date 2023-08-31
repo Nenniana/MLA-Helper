@@ -1,5 +1,8 @@
 # MLA-Helper
-MLA-Helper is a master's thesis project intended to enhance usability and increase transparency for the ML-Agents package in Unity. MLA-Helper main files can be found within MLA-Helper Showcase -> Assets -> MLA-Helper. A GitHub repository can be found at https://github.com/Nenniana/MLA-Helper.
+MLA-Helper is a master's thesis project intended to enhance usability and increase transparency for the ML-Agents package in Unity. 
+
+- MLA-Helper main files can be found within MLA-Helper Showcase -> Assets -> MLA-Helper. 
+- A GitHub repository can be found at https://github.com/Nenniana/MLA-Helper.
 
 ## Features
 - Visualization overlay of loaded ONNX model during runtime.
