@@ -25,10 +25,10 @@ This custom package includes all elements within MLA-Helper, except dependencies
 ### General Setup
 1. Install package and dependencies.
 2. Install the 'MLA-Helper-Visualization' layer:
-  1. Click on any scene component.
-  2. Click on the 'Layer' dropdown.
-  3. Select 'Add Layer...'
-  4. Add 'MLA-Helper-Visualization' as layer 31.
+  i. Click on any scene component.
+  ii. Click on the 'Layer' dropdown.
+  4. Select 'Add Layer...'
+  5. Add 'MLA-Helper-Visualization' as layer 31.
 3. Remove layer 31 from all camera culling masks in the original project.
 
 ### Use - New ML-Agents Project
