@@ -22,7 +22,7 @@ MLA-Helper is a master's thesis project intended to enhance usability and increa
 ### General Information
 This a complete Unity project where MLA-Helper has been installed and set up for a simple numbers game and all dependencies installed. 
 When play mode is enabled and an answer is requested, the game will generate two numbers between 0-10, and the trained model will attempt to decide if the sum is above or not above 10 and below or not below 10.
-MLA-Helper will visualize the resulting model, input, actions, and action marks in the visualization overlay and inspector.
+MLA-Helper will visualize the resulting model, observations, actions, and action marks in the visualization overlay and inspector.
 
 ### Use
 - Download Showcase Files.
