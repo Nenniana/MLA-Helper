@@ -8,7 +8,9 @@ MLA-Helper is a master's thesis project intended to enhance usability and increa
 - Complete decoupling between observations and action masks in ML-Agents and the rest of the project.
 
 ## General Notes
-- Dynamic values Observations and Action Masks will always reflect the current state space, whereas Visualization values reflect the previous space.
+- Dynamic Observations and Action Masks values will always reflect the current state space, whereas Visualization values reflect the previous space.
+- MLA-Helper only supports visualization of a single agent at a time.
+- MLA-Helper currently only supports discrete action space.
 
 ## Dependencies
 - "com.unity.ml-agents": "2.0.1",
