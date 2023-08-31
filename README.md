@@ -23,13 +23,13 @@ MLA-Helper will visualize the resulting model, input, actions, and action marks 
 This custom package includes all elements within MLA-Helper, except dependencies, which must be installed alongside the package by the user.
 
 ### General Setup
-1. Install package and dependencies.
-2. Install the 'MLA-Helper-Visualization' layer:
+_1. Install package and dependencies.
+_2. Install the 'MLA-Helper-Visualization' layer:
 __1. Click on any scene component.
 __2. Click on the 'Layer' dropdown.
 __3. Select 'Add Layer...'
 __4. Add 'MLA-Helper-Visualization' as layer 31.
-3. Remove layer 31 from all camera culling masks in the original project.
+_3. Remove layer 31 from all camera culling masks in the original project.
 
 ### Use - New ML-Agents Project
 - Follow 'General Setup' instructions.
