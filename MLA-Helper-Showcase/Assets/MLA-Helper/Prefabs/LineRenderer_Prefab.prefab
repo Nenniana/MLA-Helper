@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7917588613214530948}
   - component: {fileID: 1840004650199081448}
   - component: {fileID: 8109788904005909776}
-  m_Layer: 3
+  m_Layer: 31
   m_Name: LineRenderer_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -46,8 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Line: {fileID: 8109788904005909776}
-  SmoothingLength: 2
-  SmoothingSections: 10
 --- !u!120 &8109788904005909776
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -140,7 +138,7 @@ LineRenderer:
     numCornerVertices: 0
     numCapVertices: 0
     alignment: 0
-    textureMode: 0
+    textureMode: 3
     shadowBias: 0
     generateLightingData: 0
   m_UseWorldSpace: 0

@@ -20,6 +20,14 @@ namespace MLAHelper.Model.Structure {
             CalculateID();
         }
 
+        internal string GetTypeName() {
+            if (layerType == Layer.Type.Activation) {
+                return activationType.ToString();
+            }
+
+            return layerType.ToString();
+        }
+
         protected override void CalculateID () { 
             base.CalculateID();
 

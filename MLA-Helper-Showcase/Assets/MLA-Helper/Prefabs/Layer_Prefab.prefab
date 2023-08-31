@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7876960206960628519}
   - component: {fileID: 7876960206960628520}
   - component: {fileID: 7876960206960628521}
-  m_Layer: 3
+  m_Layer: 31
   m_Name: Layer_Prefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -117,7 +117,7 @@ GameObject:
   - component: {fileID: 7876960207029789342}
   - component: {fileID: 7876960207029789340}
   - component: {fileID: 7876960207029789341}
-  m_Layer: 3
+  m_Layer: 31
   m_Name: Value
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 2002
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8af6a0a0e48c95e4495d8c1c56cc430b, type: 2}
   m_sharedMaterial: {fileID: -4483536152231977008, guid: 8af6a0a0e48c95e4495d8c1c56cc430b, type: 2}
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 7.85
+  m_fontSize: 36
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -252,7 +252,7 @@ GameObject:
   - component: {fileID: 7876960207430235888}
   - component: {fileID: 7876960207430235886}
   - component: {fileID: 7876960207430235887}
-  m_Layer: 3
+  m_Layer: 31
   m_Name: Name
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -334,7 +334,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 9.75
+  m_fontSize: 11.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -387,7 +387,7 @@ GameObject:
   - component: {fileID: 7876960208105320604}
   - component: {fileID: 7876960208105320602}
   - component: {fileID: 7876960208105320603}
-  m_Layer: 3
+  m_Layer: 31
   m_Name: Type
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -469,7 +469,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 16.1
+  m_fontSize: 18.55
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

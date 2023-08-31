@@ -1,4 +1,5 @@
 using System;
+using MLAHelper.Model.Builder;
 using MLAHelper.ScriptableReferenceSystem.Collection;
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
@@ -16,6 +17,9 @@ namespace MLAHelper.HelperAgent {
 
         [SerializeField]
         private ActionMaskCollection actionMaskCollection;
+
+        [SerializeField]
+        private ModelConstructor modelConstructor;
 
         public ActionMaskCollection ActionMaskCollection { get => actionMaskCollection; private set => actionMaskCollection = value; }
         public ObservationCollection ObservationCollection { get => observationCollection; private set => observationCollection = value; }
@@ -36,10 +40,20 @@ namespace MLAHelper.HelperAgent {
             }
         }
 
-        internal void Setup(ObservationCollection observationCollection, ActionMaskCollection actionMaskCollection)
+        public virtual void RequestNewStep(bool requestVisualization = true, bool requestDecision = true, bool requestAction = true) {
+            if (requestVisualization)
+                modelConstructor.RequestNewExecute();
+            if (requestDecision)
+                RequestDecision();
+            if (requestAction)
+                RequestAction();
+        }
+
+        internal void Setup(ObservationCollection observationCollection, ActionMaskCollection actionMaskCollection, ModelConstructor modelConstructor)
         {
             this.observationCollection = observationCollection;
             this.actionMaskCollection = actionMaskCollection;
+            this.modelConstructor = modelConstructor;
         }
     } 
 }

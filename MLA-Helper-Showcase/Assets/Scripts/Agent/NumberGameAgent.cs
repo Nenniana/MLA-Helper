@@ -12,9 +12,6 @@ public class NumberGameAgent : MLAHelperAgent
 
     [SerializeField]
     private Button button;
-    
-    [SerializeField]
-    private ModelConstructor modelConstructor;
     Action<float> RewardUpdated;
 
     protected override void OnEnable()
@@ -23,7 +20,7 @@ public class NumberGameAgent : MLAHelperAgent
 
         gameController.CorrectAnswer += OnCorrectAnswer;
         gameController.WrongAnswer += OnWrongAnswer;
-        button.onClick.AddListener(Run);
+        button.onClick.AddListener(OnButtonRequest);
     }
     protected override void OnDisable()
     {
@@ -31,7 +28,7 @@ public class NumberGameAgent : MLAHelperAgent
 
         gameController.CorrectAnswer -= OnCorrectAnswer;
         gameController.WrongAnswer -= OnWrongAnswer;
-        button.onClick.RemoveListener(Run);
+        button.onClick.RemoveListener(OnButtonRequest);
     }
 
     private void OnWrongAnswer()
@@ -70,9 +67,7 @@ public class NumberGameAgent : MLAHelperAgent
         gameController.ChooseAnswer(actions.DiscreteActions[0] != 0, actions.DiscreteActions[1] != 0);
     }
 
-    private void Run() {
-        modelConstructor.RequestNewExecute();
-        RequestDecision();
-        RequestAction();
+    private void OnButtonRequest() {
+        RequestNewStep();
     }
 }

@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: MainAgentWindowSO
   m_EditorClassIdentifier: 
   agent: {fileID: 0}
-  agentModel: {fileID: 5022602860645237092, guid: 98e6b3b30c44aa14ca1ba31e8ce43f47, type: 3}
-  observationCollection: {fileID: 11400000, guid: edf2ae77e29d923439476d68980e8e18, type: 2}
-  actionMaskCollection: {fileID: 11400000, guid: 0dd75849916fa1948aa8e9388f2f9c03, type: 2}
+  agentModel: {fileID: 0}
+  observationCollection: {fileID: 0}
+  actionMaskCollection: {fileID: 0}

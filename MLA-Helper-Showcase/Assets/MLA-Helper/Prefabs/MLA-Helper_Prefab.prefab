@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 8245834311698491487}
   - component: {fileID: 8245834311698491480}
   - component: {fileID: 8245834311698491481}
-  m_Layer: 3
+  m_Layer: 31
   m_Name: Model Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -984,7 +984,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8245834312166028334}
-  m_Layer: 3
+  m_Layer: 31
   m_Name: ModelVisualization
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1213,7 +1213,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8245834312299762274}
-  m_Layer: 3
+  m_Layer: 31
   m_Name: ElementParent
   m_TagString: Untagged
   m_Icon: {fileID: 0}

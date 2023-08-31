@@ -99,8 +99,9 @@ namespace MLAHelper.Interface {
 
             GameObject deployPrefab = AssetDatabase.LoadAssetAtPath<GameObject>(SettingsHelper.GetSettings().DeployPrefabPath);
             ModelConstructor fullModelBuilder = Instantiate(deployPrefab).GetComponent<ModelConstructor>();
+            fullModelBuilder.gameObject.name = "MLA-Helper";
             fullModelBuilder.Initialize(this);
-            InitializeAgent();
+            InitializeAgent(fullModelBuilder);
             CreateEventSystem();
         }
 
@@ -111,14 +112,15 @@ namespace MLAHelper.Interface {
         private void DeployCollectionsToModelBuilderInScene() {
             CreateActionMaskCollectionScriptableObject();
             CreateObservationCollectionScriptableObject();
-            FindAnyObjectByType<ModelConstructor>().Initialize(this);
-            InitializeAgent();
+            ModelConstructor modelConstructor = FindAnyObjectByType<ModelConstructor>();
+            modelConstructor.Initialize(this);
+            InitializeAgent(modelConstructor);
             CreateEventSystem();
         }
 
-        private void InitializeAgent() {
+        private void InitializeAgent(ModelConstructor modelConstructor) {
             if (agent != null) {
-                agent.Setup(observationCollection, actionMaskCollection);
+                agent.Setup(observationCollection, actionMaskCollection, modelConstructor);
             }
         }
 
@@ -193,7 +195,8 @@ namespace MLAHelper.Interface {
         private void SetModel()
         {   if (behaviorParameters.Model != null)
                 AgentModel = behaviorParameters.Model;
-                modelName = AgentModel.name;
+                if (AgentModel != null)
+                    modelName = AgentModel.name;
         }
 
         // Get needed information from ML-Agents behaviour- and brainParameters
@@ -212,7 +215,7 @@ namespace MLAHelper.Interface {
             if (branchSizeArray != null) {
                 ActionMaskCollection = ScriptableObject.CreateInstance<ActionMaskCollection>();
                 actionMaskCollectionHasChanged = false;
-                ActionMaskCollection.Name = modelName + " Action mask Collection";
+                ActionMaskCollection.Name = modelName + "Action mask Collection";
                 ActionMaskCollection.actionMasks = new GLobalActionMaskReference[branchArrayOverallSize];
                 int counter = 0;
                 for (int branch = 0; branch < branchSizeArray.Length; branch++) {
@@ -228,7 +231,7 @@ namespace MLAHelper.Interface {
         private void CreateObservationCollection() {
             ObservationCollection = ScriptableObject.CreateInstance<ObservationCollection>();
             observationCollectionHasChanged = false;
-            ObservationCollection.Name = modelName +  " Observation Collection";
+            ObservationCollection.Name = modelName +  "Observation Collection";
             ObservationCollection.ObservationReferences = new GOReferenceParent[0];
         }
 

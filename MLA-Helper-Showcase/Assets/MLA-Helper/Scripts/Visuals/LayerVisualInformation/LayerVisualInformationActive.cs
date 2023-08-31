@@ -10,6 +10,9 @@ namespace MLAHelper.Model.Visuals {
 
             background_Image.color = SettingsHelper.GetSettings().ActiveColor;
             SetTextColor(SettingsHelper.GetSettings().ActiveTextColor);
+
+            ModelLayerActive modelLayerActive = modelLayer as ModelLayerActive;
+            type_TextMesh.text = modelLayerActive.GetTypeName();
         }
     }
 }

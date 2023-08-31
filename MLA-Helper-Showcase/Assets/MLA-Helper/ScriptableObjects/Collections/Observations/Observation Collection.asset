@@ -10,21 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5dffd95b9e79cc645b85e6fcaa46aed9, type: 3}
-  m_Name: ViewerCompute_Final Observation Collection
+  m_Name: Observation Collection
   m_EditorClassIdentifier: 
-  Name: ViewerCompute_Final Observation Collection
+  Name: Observation Collection
   ObservationReferences:
-  - rid: 5482795578069614596
-  - rid: 5482795578069614597
+  - rid: 5482795708435398665
+  - rid: 5482795708435398666
   references:
     version: 2
     RefIds:
-    - rid: 5482795578069614596
+    - rid: 5482795708435398665
       type: {class: FloatGOReference, ns: MLAHelper.ScriptableReferenceSystem.Reference, asm: Assembly-CSharp}
       data:
         name: RandomNumber1
         variable: {fileID: 11400000, guid: 1e21ff7fe44c26b48a94b180cd696f96, type: 2}
-    - rid: 5482795578069614597
+    - rid: 5482795708435398666
       type: {class: FloatGOReference, ns: MLAHelper.ScriptableReferenceSystem.Reference, asm: Assembly-CSharp}
       data:
         name: RandomNumber2
