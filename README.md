@@ -22,15 +22,6 @@ MLA-Helper will visualize the resulting model, input, actions, and action marks 
 ### General
 This custom package includes all elements within MLA-Helper, except dependencies, which must be installed alongside the package by the user.
 
-### General Setup
-1. Install package and dependencies.
-2. Install the 'MLA-Helper-Visualization' layer:
-   1. Click on any scene component.
-   2. Click on the 'Layer' dropdown.
-   3. Select 'Add Layer...'
-   4. Add 'MLA-Helper-Visualization' as layer 31.
-3. Remove layer 31 from all camera culling masks in the original project.
-
 ### Use - New ML-Agents Project
 1. Follow the 'General Setup' instructions.
 2. Create a new agent script that inherits from the MLAHelperAgent class.
@@ -38,8 +29,11 @@ This custom package includes all elements within MLA-Helper, except dependencies
 4. Open the MLA-Helper Central Hub by clicking on MLA-Helper in the Unity Menu.
 5. Supply the MLAHelperAgent in the 'Input ML-Agents agent,' whereafter all information will be loaded.
 6. Follow the 'Observations and Action Masks for a loaded model' instructions.
-7. Follow the 'Hookup Observations and Action Masks to project' instructions.
-8. Once the Model has been trained, open the Central Hub, ensure all information is loaded correctly, and click 'Deploy MLA-Helper in Current Scene.'
+7. Click 'Deploy MLA-Helper in Current Scene.'
+8. Follow the 'Hookup Observations and Action Masks to project' instructions.
+9. Once the Model has been trained:
+   1. Supply the ONNX Model in the ModelConstructor component of the deployed MLA-Helper prefab.
+   2. Call 'RequestNewStep' from MLAHelperAgent whenever the agent and visualization should update.
 
 ### Use - Existing ML-Agents Project
 1. Follow the 'General Setup' instructions.
@@ -50,8 +44,19 @@ This custom package includes all elements within MLA-Helper, except dependencies
 6. Follow the 'Observations and Action Masks for a loaded model' instructions.
 7. Click 'Deploy MLA-Helper in Current Scene.'
 8. Follow 'Hookup Observations and Action Masks to project' instructions.
+9. Call 'RequestNewStep' from MLAHelperAgent whenever the agent and visualization should update.
 
-### Observations and Action Masks for a loaded model
+### General Steps
+#### General Setup
+1. Install package and dependencies.
+2. Install the 'MLA-Helper-Visualization' layer:
+   1. Click on any scene component.
+   2. Click on the 'Layer' dropdown.
+   3. Select 'Add Layer...'
+   4. Add 'MLA-Helper-Visualization' as layer 31.
+3. Remove layer 31 from all camera culling masks in the original project.
+
+#### Observations and Action Masks for a loaded model
 1. Fill out Observations and Action Masks:
    1. Action Masks:
       1. The action mask collection will be filled with the required action masks for the loaded model, as well as their branch and index.
@@ -62,7 +67,7 @@ This custom package includes all elements within MLA-Helper, except dependencies
       2. It is recommended to give every observation a descriptive name, as it will help identify each observation during runtime.
       3. Click 'Generate Reference' to create each new observation.
    
-### Hookup Observations and Action Masks to project
+#### Hookup Observations and Action Masks to project
 1. Add observation references to existing scripts and attach previously created referenced observations hereto in the inspector.
 2. Add action mask references to existing scripts and attach previously created referenced action masks hereto in the inspector.
 3. Set whether to use constant or dynamic information for each reference.
