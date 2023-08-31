@@ -25,7 +25,7 @@ This custom package includes all elements within MLA-Helper, except dependencies
 ### Use - New ML-Agents Project:
 1. Follow the '**General Setup**' instructions.
 2. Create a new agent script that inherits from the _MLAHelperAgent_ class.
-3. Fill in the desired Vector Observation Space Size and all Discrete Branches for the agent's _Behavior Parameters_ in the editor.
+3. Fill in the desired **Vector Observation Space Size** and all **Discrete Branches** for the agent's _Behavior Parameters_ in the editor.
 4. Open the MLA-Helper Central Hub by clicking on MLA-Helper in the Unity Menu.
 5. Supply the _MLAHelperAgent_ in the '**Input ML-Agents agent**', whereafter all information will be loaded.
 6. Follow the '**Observations and Action Masks for a loaded model**' instructions.
@@ -37,8 +37,8 @@ This custom package includes all elements within MLA-Helper, except dependencies
 
 ### Use - Existing ML-Agents Project:
 1. Follow the '**General Setup**' instructions.
-2. Ensure that any ML-Agents agent inherits from _MLAHelperAgent_ instead of the Agent class (MLA-Helper works with only one agent at a time).
-3. Fill in the Model, Vector Observation Space Size, and all Discrete Branches for the agent's _Behavior Parameters_ in the editor.
+2. Ensure that any ML-Agents agent inherits from _MLAHelperAgent_ instead of the _Agent_ class (MLA-Helper works with only one agent at a time).
+3. Fill in the **Model**, **Vector Observation Space Size**, and all **Discrete Branches** for the agent's _Behavior Parameters_ in the editor.
 4. Open the MLA-Helper Central Hub by clicking on MLA-Helper in the Unity Menu.
 5. Supply the _MLAHelperAgent_ in the '**Input ML-Agents agent**', whereafter all information will be loaded.
 6. Follow the '**Observations and Action Masks for a loaded model**' instructions.
