@@ -30,14 +30,25 @@ This custom package includes all elements within MLA-Helper, except dependencies
   - Select 'Add Layer...'
   - Add 'MLA-Helper-Visualization' as layer 31.
 - Remove layer 31 from all camera culling masks in the original project.
-  
-### Use - Existing Project
+
+### Use - New ML-Agents Project
 - Follow 'General Setup' instructions.
-- Ensure that any ML-Agents agent inherits from MLAHelperAgent instead of the Agent class (MLA-Helper works with only one agent at a time).
-- Fill-in Model, Vector Observation Space Size, and all Discrete Branches for the agent's Behavior Parameters.
+- Create a new agent script that inherits from the MLAHelperAgent class.
+- Fill in the desired Vector Observation Space Size and all Discrete Branches for the agent's Behavior Parameters in the editor.
 - Open the MLA-Helper Central Hub by clicking on MLA-Helper in the Unity Menu.
 - Supply the MLAHelperAgent in the 'Input ML-Agents agent,' whereafter all information will be loaded.
 - Follow 'Observations and Action Masks for a loaded model' instructions.
+- Follow 'Hookup Observations and Action Masks to project' instructions.
+- Once the Model has been trained, open the Central Hub, ensure all information is loaded correctly, and click 'Deploy MLA-Helper in Current Scene.'
+
+### Use - Existing ML-Agents Project
+- Follow 'General Setup' instructions.
+- Ensure that any ML-Agents agent inherits from MLAHelperAgent instead of the Agent class (MLA-Helper works with only one agent at a time).
+- Fill in the Model, Vector Observation Space Size, and all Discrete Branches for the agent's Behavior Parameters.
+- Open the MLA-Helper Central Hub by clicking on MLA-Helper in the Unity Menu.
+- Supply the MLAHelperAgent in the 'Input ML-Agents agent,' whereafter all information will be loaded.
+- Follow 'Observations and Action Masks for a loaded model' instructions.
+- Click 'Deploy MLA-Helper in Current Scene.'
 - Follow 'Hookup Observations and Action Masks to project' instructions.
 
 ### Observations and Action Masks for a loaded model
