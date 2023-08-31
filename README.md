@@ -23,7 +23,7 @@ MLA-Helper will visualize the resulting model, input, actions, and action marks 
 This custom package includes all elements within MLA-Helper, except dependencies, which must be installed alongside the package by the user.
 
 ### General Setup
-_1. Install package and dependencies.
+_1. Install package and dependencies.__
 _2. Install the 'MLA-Helper-Visualization' layer:
 __1. Click on any scene component.
 __2. Click on the 'Layer' dropdown.
