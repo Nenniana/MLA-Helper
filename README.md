@@ -22,7 +22,7 @@ MLA-Helper will visualize the resulting model, input, actions, and action marks 
 ### General
 This custom package includes all elements within MLA-Helper, except dependencies, which must be installed alongside the package by the user.
 
-### Use
+### General Setup
 - Install package and dependencies.
 - Install the 'MLA-Helper-Visualization' layer:
   - Click on any scene component.
@@ -30,3 +30,28 @@ This custom package includes all elements within MLA-Helper, except dependencies
   - Select 'Add Layer...'
   - Add 'MLA-Helper-Visualization' as layer 31.
 - Remove layer 31 from all camera culling masks in the original project.
+  
+### Use - Existing Project
+- Follow 'General Setup' instructions.
+- Ensure that any ML-Agents agent inherits from MLAHelperAgent instead of the Agent class (MLA-Helper works with only one agent at a time).
+- Fill-in Model, Vector Observation Space Size, and all Discrete Branches for the agent's Behavior Parameters.
+- Open the MLA-Helper Central Hub by clicking on MLA-Helper in the Unity Menu.
+- Supply the MLAHelperAgent in the 'Input ML-Agents agent,' whereafter all information will be loaded.
+- Follow 'Observations and Action Masks for a loaded model' instructions.
+- Follow 'Hookup Observations and Action Masks to project' instructions.
+
+### Observations and Action Masks for a loaded model
+- Fill out Observations and Action Masks:
+  - Action Masks:
+    - The action mask collection will be filled with the required action masks for the loaded model, as well as their branch and index.
+    - It is recommended to give every action mask a descriptive name, as it will help identify actions chosen for the agent.
+    - Click 'Create All Uninitialized Action Masks' to create action masks for all values.
+  - Observations:
+    - Fill the observation collection with all needed observations. MLA-Helper will inform you of how many are needed in relation to the loaded model.
+    - It is recommended to give every observation a descriptive name, as it will help identify each observation during runtime.
+    - Click 'Generate Reference' to create each new observation.
+   
+### Hookup Observations and Action Masks to project
+- Add observation references to existing scripts and attach previously created referenced observations hereto in the inspector.
+- Add action mask references to existing scripts and attach previously created referenced action masks hereto in the inspector.
+- Set whether to use constant or dynamic information for each reference.
