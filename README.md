@@ -2,10 +2,11 @@
 MLA-Helper is a master's thesis project intended to enhance usability and increase transparency for the ML-Agents package in Unity.
 
 ## Features
-- Visualization of loaded ONNX model during runtime.
+- Visualization overlay of loaded ONNX model during runtime.
 - Visualization of observations, actions, and action marks with label information to enable easier debugging.
 - Switching between constant and dynamic observation and action mask data.
 - Complete decoupling between observations and action masks in ML-Agents and the rest of the project.
+- Drag and zoom of visualization.
 
 ## General Notes
 - Dynamic Observations and Action Masks values will always reflect the current state space, whereas Visualization values reflect the previous space.
